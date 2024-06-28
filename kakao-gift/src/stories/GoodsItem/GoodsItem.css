@@ -1,0 +1,79 @@
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 16px 0;
+  max-width: 120px;
+  text-align: center;
+  position: relative;
+}
+
+.goods-item-image-wrapper {
+  width: 120px;
+  height: 120px; /* 1:1 aspect ratio */
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.goods-item-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.ranking-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge-pink {
+  background-color: #ff69b4;
+}
+
+.badge-gray {
+  background-color: #ccc;
+}
+
+.goods-item-details {
+  width: 100%;
+}
+
+.goods-item-title {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.goods-item-subtitle {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.goods-item-amount {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
