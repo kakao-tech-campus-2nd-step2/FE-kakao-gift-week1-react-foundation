@@ -1,0 +1,72 @@
+.goods-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+  /* border: 1px solid red; */
+}
+
+.goods-image-wrapper {
+  position: relative;
+  /* 상대 위치 설정 */
+  width: 100px;
+  /* 이미지 너비 고정 */
+  height: 100px;
+  /* 이미지 높이 고정 */
+  margin-right: 16px;
+}
+
+.goods-image {
+  width: 100%;
+  /* 부모 요소에 따라 너비 조정 */
+  height: 100%;
+  /* 이미지 높이 고정 */
+  object-fit: cover;
+  /* 이미지가 자리를 차지하도록 설정 */
+  border-radius: 8px;
+  /* 이미지에 둥근 테두리 적용 */
+}
+
+.ranking-badge {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(224, 125, 142);
+  text-align: center;
+}
+
+.pink {
+  background-color: rgb(224, 125, 142);
+}
+
+.gray {
+  background-color: lightgray;
+}
+
+.goods-details {
+  flex: 1;
+  width: 100px;
+  text-overflow: ellipsis;
+  flex-wrap: wrap;
+}
+
+.goods-title {
+  font-size: 16px;
+}
+
+.goods-subtitle {
+  margin-top: 4px;
+  color: #666;
+}
+
+.goods-amount {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 900;
+}
