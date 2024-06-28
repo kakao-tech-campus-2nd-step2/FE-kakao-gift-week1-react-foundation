@@ -1,0 +1,42 @@
+.rankingItem {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.rankingIndex {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  display: flex;
+  width: 20px;
+  height: auto;
+  background-color: coral;
+  color: white;
+  border-radius: 3px;
+}
+
+.imgSrc {
+  width: 100px;
+  height: auto;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.amount {
+  margin-top: 0;
+  font-size: 15px;
+}

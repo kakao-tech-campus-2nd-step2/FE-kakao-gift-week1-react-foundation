@@ -1,0 +1,30 @@
+.goodsItem {
+  width: 250px;
+  height: 250px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgSrc {
+  width: 100px;
+  height: auto;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.title {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+
+.amount {
+  margin-top: 0;
+  font-size: 15px;
+}

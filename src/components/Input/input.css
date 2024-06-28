@@ -1,0 +1,35 @@
+.input{
+  display: block;
+  font-size: 20px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-x: auto;
+  background-color: rgb(233,233,233);
+  caret-color: black;
+  text-align: center;
+}
+
+.true {
+  background-color: rgba(255,0,0,0.2);
+}
+
+.small {
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.medium {
+  height: 40px;
+  width: 350px;
+  font-size: 20px;
+}
+
+.large {
+  height: 50px;
+  width: 500px;
+  font-size: 30px;
+}
