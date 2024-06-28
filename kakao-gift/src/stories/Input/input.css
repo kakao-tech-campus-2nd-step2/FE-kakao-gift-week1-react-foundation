@@ -1,0 +1,17 @@
+.storybook-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.storybook-input--disabled {
+  background-color: #f9f9f9;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.storybook-input--invalid {
+  border-color: red;
+  background-color: #ffe6e6;
+}
