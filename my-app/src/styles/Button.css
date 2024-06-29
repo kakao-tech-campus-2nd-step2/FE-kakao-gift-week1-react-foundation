@@ -1,0 +1,72 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Theme styles */
+.button.kakao {
+  background-color: #ffeb00;
+  color: #000;
+  font-size: 16px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button.outline {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.button.black {
+  background-color: #000;
+  color: #fff;
+}
+
+.button.lightGray {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+.button.darkGray {
+  background-color: #a9a9a9;
+  color: #fff;
+}
+
+/* Size styles */
+.button.small {
+  font-size: 12px;
+  padding: 5px 15px;
+}
+
+.button.large {
+  font-size: 20px;
+  padding: 15px 30px;
+}
+
+/* Responsive size handling */
+@media (max-width: 600px) {
+  .button.responsive {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .button.responsive {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .button.responsive {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+}
