@@ -1,0 +1,12 @@
+// tsconfig.paths.json
+// 아직 폴더 구조 만들기 전
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"]
+    }
+  }
+}
