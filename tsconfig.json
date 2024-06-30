@@ -1,0 +1,24 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "target": "ES2015", //es2015년도 버전으로 TS를 JS로 변환하겠다
+    "module": "ESNext", //ECMAScript의 가장 최신 버전으로 모듈 사용
+    "moduleResolution": "Node", //모듈의 해석 방식 지정
+    "esModuleInterop": true, //ESM 방식과 common.js 방식 호환
+    "lib": ["ESNext", "DOM"], //라이브러리
+    "strict": true, //TS의 문법을 최대한 엄격하게
+    /* alias */
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["./src/*"]
+    }
+  }
+}
