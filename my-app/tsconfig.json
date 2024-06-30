@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    // TypeScript 컴파일러의 옵션을 설정하는 항목
+
+    "target": "es5", // JavaScript의 ECMAScript 버전 지정
+    "lib": [ // 라이브러리
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // JavaScript 파일을 TypeScript에서 허용
+    "skipLibCheck": true, // 'node_modules' 내의 라이브러리 파일에서 타입 검사를 생략할지 여부 설정
+    "esModuleInterop": true, // ES 모듈과 CommonJS 모듈 간 상호 운용성 향상
+    "allowSyntheticDefaultImports": true,
+    "strict": true, // 엄격한 타입 체크 옵션 활성화
+    "forceConsistentCasingInFileNames": true, // 파일 이름의 대소문자 일관성을 강제
+    "noFallthroughCasesInSwitch": true, // switch 문에서 case 간의 fallthrough를 방지
+    "module": "esnext", // 모듈 코드 생성 방식 선택 (AMD, ES6 등)
+    "moduleResolution": "node", // 모듈 해석 방식 설정 (Node.js 스타일)
+    "resolveJsonModule": true, // JSON 모듈을 import 할 수 있도록 허용
+    "isolatedModules": true, // 각 파일을 개별 모듈로 컴파일
+    "noEmit": true, // 결과 파일을 생성하지 않음
+    "jsx": "react-jsx" // JSX를 React로 컴파일
+  },
+  "include": [ // 컴파일할 파일을 찾을 패턴을 지정
+    "src"
+  ],
+  "baseUrl": "./src",
+  "paths": {
+    "@components/*": ["components/*"],
+    "@styles/*": ["styles/*"],
+    "@/*": ["*"]
+  },
+  //"exclude": 제외할 파일 지정
+  //"extends": 다른 'tsconfig.json' 파일에서 설정을 확장할 때 사용
+  //"compileOnSave": 저장할 때마다 자동으로 컴파일 실행 여부 설정
+  //"references": 프로젝트 간에 종속성 관리
+}

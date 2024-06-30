@@ -1,0 +1,30 @@
+{
+  "parser": "@typescript-eslint/parser", // ESLint가 어떤 종류의 코드를 분석할지 결정
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "rules": {
+    "react/react-in-jsx-scope": "off", // React 17+에서는 불필요
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }], // 파일 확장자를 명시적으로 지정
+    //"linebreak-style": ["error", "unix"], // CRLF 문제 해결
+    "arrow-parens": ["error", "always"], // 화살표 함수 괄호 문제 해결
+    "object-curly-newline": ["error", { "multiline": true, "consistent": true }] // 객체 리터럴에서 중괄호 사용 방식 지정
+  }
+}
