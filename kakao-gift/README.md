@@ -14,12 +14,12 @@ npm run start
 
 ### 🧾요구사항
 
-- [x] Create React App을 기반의 프로젝트 생성
-- [x] Typescript 및 절대경로 alias 세팅
-- [x] airbnb eslint & prettier 추가
-- [x] emotion 라이브러리 추가 및 reset css 적용
-- [x] 불필요한 파일, 코드 제거
-- [x] 폴더구조 반영
+-   [x] Create React App을 기반의 프로젝트 생성
+-   [x] Typescript 및 절대경로 alias 세팅
+-   [x] airbnb eslint & prettier 추가
+-   [x] emotion 라이브러리 추가 및 reset css 적용
+-   [x] 불필요한 파일, 코드 제거
+-   [x] 폴더구조 반영
 
 ### 🗂️폴더 구조
 
@@ -37,12 +37,12 @@ npm run start
  ┗ 📜reportWebVitals.ts
 ```
 
-- assets: 폰트, 이미지 등 프로젝트에 이용되는 다양한 자산들을 저장하는 폴더
-- components: 공통적으로 사용될 수 있는 컴포넌트를 저장하는 폴더
-  - common: 범용적으로 사용되는 컴포넌트를 저장
-- pages: 페이지 단위의 컴포넌트를 저장하는 폴더
-- store: zustand, recoil, redux와 같은 상태 관리 라이브러리 사용 시 관련 파일을 저장하는 폴더
-- utils: 공통적으로 사용하는 함수를 저장하는 폴더
+-   assets: 폰트, 이미지 등 프로젝트에 이용되는 다양한 자산들을 저장하는 폴더
+-   components: 공통적으로 사용될 수 있는 컴포넌트를 저장하는 폴더
+    -   common: 범용적으로 사용되는 컴포넌트를 저장
+-   pages: 페이지 단위의 컴포넌트를 저장하는 폴더
+-   store: zustand, recoil, redux와 같은 상태 관리 라이브러리 사용 시 관련 파일을 저장하는 폴더
+-   utils: 공통적으로 사용하는 함수를 저장하는 폴더
 
 ## 💡STEP2 Storybook을 사용한 컴포넌트 구현
 
@@ -56,24 +56,24 @@ npm run storybook
 
 ### 🧾요구사항
 
-- [x] **Button** 컴포넌트 구현
-  - Theme Props에 따라 버튼의 컬러와 디자인이 다르도록 구현
-  - Size Props에 따라 버튼의 Size가 다르게 보여지도록 구현 (value가 responsive 인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 구현)
-  - Button Element의 기본 속성들을 모두 사용할 수 있도록 구현
-- [x] **Input** 컴포넌트 구현
-  - disabled Props에 따라 Input이 비활성화 되고, UI에서도 비활성화 됨을 인지할 수 있도록 구현
-  - invalid Props 에 따라 Input의 값이 잘못되었음을 UI에서 인지할 수 있도록 구현
-  - Size Props에 따라 버튼의 Size가 다르게 보여지도록 구현. (value가 responsive 인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 함.)
-  - Input Element의 기본 속성들을 모두 사용할 수 있도록 구현
-- [x] **Image** 컴포넌트 구현
-  - ratio Props에 따라 이미지 비율을 설정할 수 있도록 함 (value가 number로 16/9로 넘겨진 경우 16:9비율로 보여짐, square을 설정한 경우 정사각형으로 보여짐)
-  - radius Props에 따라 모서리가 둥글게 되도록 구현 (value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여짐)
-  - Img Element의 기본 속성들을 모두 사용할 수 있도록 구현
-- [x] **GoodsItem** 컴포넌트 구현
-  - Default 형태와 Ranking 형태의 컴포넌트를 각각 구현
-  - 공통으로 imageSrc, subtitle, title, amount Props를 넘겨받도록 함.
-  - Ranking 컴포넌트의 경우 rankingIndex Props를 추가로 넘겨받음. 1~3까지는 분홍색, 나머지 숫자에는 회색의 랭킹 뱃지가 보여짐.
-- [x] **Grid, Container** 컴포넌트 구현
+-   [x] **Button** 컴포넌트 구현
+    -   Theme Props에 따라 버튼의 컬러와 디자인이 다르도록 구현
+    -   Size Props에 따라 버튼의 Size가 다르게 보여지도록 구현 (value가 responsive 인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 구현)
+    -   Button Element의 기본 속성들을 모두 사용할 수 있도록 구현
+-   [x] **Input** 컴포넌트 구현
+    -   disabled Props에 따라 Input이 비활성화 되고, UI에서도 비활성화 됨을 인지할 수 있도록 구현
+    -   invalid Props 에 따라 Input의 값이 잘못되었음을 UI에서 인지할 수 있도록 구현
+    -   Size Props에 따라 버튼의 Size가 다르게 보여지도록 구현. (value가 responsive 인 경우 미디어 쿼리에 따라 사이즈가 달라지도록 함.)
+    -   Input Element의 기본 속성들을 모두 사용할 수 있도록 구현
+-   [x] **Image** 컴포넌트 구현
+    -   ratio Props에 따라 이미지 비율을 설정할 수 있도록 함 (value가 number로 16/9로 넘겨진 경우 16:9비율로 보여짐, square을 설정한 경우 정사각형으로 보여짐)
+    -   radius Props에 따라 모서리가 둥글게 되도록 구현 (value가 number인 경우 number만큼 모서리가 둥글게 적용, circle인 경우 원형으로 보여짐)
+    -   Img Element의 기본 속성들을 모두 사용할 수 있도록 구현
+-   [x] **GoodsItem** 컴포넌트 구현
+    -   Default 형태와 Ranking 형태의 컴포넌트를 각각 구현
+    -   공통으로 imageSrc, subtitle, title, amount Props를 넘겨받도록 함.
+    -   Ranking 컴포넌트의 경우 rankingIndex Props를 추가로 넘겨받음. 1~3까지는 분홍색, 나머지 숫자에는 회색의 랭킹 뱃지가 보여짐.
+-   [x] **Grid, Container** 컴포넌트 구현
 
 ## 📍STEP 3
 
