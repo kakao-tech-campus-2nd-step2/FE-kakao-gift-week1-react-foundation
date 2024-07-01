@@ -1,0 +1,77 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["^@styles/"]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/no-var-requires": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@styles", "./src/styles"],
+          ["@components", "./src/components"],
+          ["@utils", "./src/utils"],
+          ["@images", "./src/assets/images"]  // asserts를 assets로 수정
+        ],
+        "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+      },
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".png"]
+      },
+      "webpack": {
+        "config": "craco.config.js"
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.stories.tsx"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
+}
