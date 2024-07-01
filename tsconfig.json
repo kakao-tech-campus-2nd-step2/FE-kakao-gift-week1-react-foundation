@@ -1,0 +1,34 @@
+{
+  //Typescript 컴파일러의 옵션들을 지정하는 속성
+  "compilerOptions": {
+    //컴파일 될 ES 버전 명시
+    "target": "ES2015",
+    //모듈 시스템 지정
+    "module": "ESNext",
+    //모듈 해석 방식 지정
+    "moduleResolution": "Node",
+    //ESM 모듈 방식 호환성 활성화 여부
+    "esModuleInterop": true,
+    //모든 파일을 모듈로 컴파일, import 혹은 export 키워드 필수
+    "isolatedModules": false,
+    //컴파일러에서 사용할 라이브러리 지정
+    "lib": ["ESNEXT", "DOM"],
+    //더 엄격한 타입 검사 활성화
+    "strict": true,
+    //모듈 해석의 기본 경로 설정
+    "baseUrl": "./",
+    //모듈 경로의 별칭 설정
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    //타입스크립트가 jsx 구문을 올바르게 처리하도록 함
+    "jsx": "react-jsx"
+  },
+
+  //컴파일할 파일들을 지정하는 속성
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+
+  //컴파일에서 제외할 파일들을 지정하는 속성
+  "exclude": ["node_modules"]
+}

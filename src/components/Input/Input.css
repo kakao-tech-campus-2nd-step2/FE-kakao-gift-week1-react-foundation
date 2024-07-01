@@ -1,0 +1,36 @@
+.input {
+  /* 공통 스타일 */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input:disabled {
+  background-color: #f5f5f5;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.input.invalid {
+  border-color: #e74c3c;
+}
+
+.small {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.large {
+  padding: 15px;
+  font-size: 18px;
+}
+
+/* responsive 사이즈에 대한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .responsive {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

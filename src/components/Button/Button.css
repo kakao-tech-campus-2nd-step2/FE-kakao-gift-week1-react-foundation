@@ -1,0 +1,62 @@
+/* Button.css */
+
+.button {
+  /* 공통 스타일 */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.kakao {
+  /* kakao 테마 스타일 */
+  background-color: #fee500;
+  color: white;
+}
+
+.outline {
+  /* outline 테마 스타일 */
+  background-color: white;
+  border: 1px solid black;
+}
+
+.black {
+  /* black 테마 스타일 */
+  background-color: black;
+  color: white;
+}
+
+.lightGray {
+  /* lightgray 테마 스타일 */
+  background-color: #e0e0e0;
+  color: black;
+}
+
+.darkGray {
+  /* darkgray 테마 스타일 */
+  background-color: #424242;
+  color: white;
+}
+
+.small {
+  /* 작은 크기 버튼 스타일 */
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.large {
+  /* 큰 크기 버튼 스타일 */
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+/* responsive 사이즈에 대한 미디어 쿼리 */
+@media (max-width: 768px) {
+  .responsive {
+    /* 미디어 쿼리에 따른 버튼 사이즈 조정 */
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
