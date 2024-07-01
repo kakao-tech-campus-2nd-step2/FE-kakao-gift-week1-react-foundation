@@ -1,0 +1,78 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+.storybook-button--primary:hover {
+  background-color: #0d8cf0;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--secondary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+.storybook-button--responsive {
+  padding: 5vw 10vw;
+  font-size: 2vw;
+}
+
+/* Add theme styles */
+.storybook-button--kakao {
+  background-color: #ffeb00;
+  color: #3c1e1e;
+}
+.storybook-button--kakao:hover {
+  background-color: #ffdd00;
+}
+.storybook-button--outline {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+.storybook-button--outline:hover {
+  background-color: #e7f3ff;
+}
+.storybook-button--black {
+  background-color: #000;
+  color: #fff;
+}
+.storybook-button--black:hover {
+  background-color: #333;
+}
+.storybook-button--lightGray {
+  background-color: #d3d3d3;
+  color: #000;
+}
+.storybook-button--lightGray:hover {
+  background-color: #b0b0b0;
+}
+.storybook-button--darkGray {
+  background-color: #808080;
+  color: #fff;
+}
+.storybook-button--darkGray:hover {
+  background-color: #666;
+}
